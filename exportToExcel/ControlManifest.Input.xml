@@ -4,18 +4,17 @@
     <external-service-usage enabled="false">   
     </external-service-usage>    
      <property name="buttonText" display-name-key="buttonText" description-key="button_Text" of-type="SingleLine.Text" usage="bound" required="true"/>
+     <property name="sheetName" display-name-key="sheetName" description-key="sheet_Name" of-type="SingleLine.Text" usage="bound" required="true"/>
     <property name="jsonData" display-name-key="jsonData"  description-key="json_Data" of-type="SingleLine.Text" usage="input" required="true"/>
     <property name="fileName" display-name-key="fileName" description-key="file_Name" of-type="SingleLine.Text" usage="input" required="true" />
     <property name="backgroundColor" display-name-key="backgroundColor" description-key="background_Color" of-type="SingleLine.Text" usage="input" />
     <property name="color" display-name-key="color" description-key="text_Color" of-type="SingleLine.Text" usage="input" />
     <property name="width" display-name-key="width" description-key="width" of-type="SingleLine.Text" usage="input" />
     <property name="height" display-name-key="height" description-key="height" of-type="SingleLine.Text" usage="input" />
-    <property name="fontSize" display-name-key="fontSize" description-key="font_Size" of-type="SingleLine.Text" usage="input" />
-    <property name="fontWeight" display-name-key="fontWeight" description-key="font_Weight" of-type="SingleLine.Text" usage="input"/>
-    <property name="fontFamily" display-name-key="fontFamily" description-key="font_Family" of-type="SingleLine.Text" usage="input" />
+    <property name="fontSize" display-name-key="fontSize" description-key="font_Size" of-type="SingleLine.Text" usage="input" />    
     <property name="borderColor" display-name-key="borderColor" description-key="border_Color" of-type="SingleLine.Text" usage="input" />
     <property name="borderRadius" display-name-key="borderRadius" description-key="border_Radius" of-type="SingleLine.Text" usage="input" />
-    <property name="backgroundColorHover" display-name-key="backgroundColorHover" description-key="background_Color" of-type="SingleLine.Text" usage="input" />       
+    <property name="backgroundColorHover" display-name-key="backgroundColorHover" description-key="backgroundColorHover" of-type="SingleLine.Text" usage="input" />       
     <resources>
       <code path="index.ts" order="1"/>   
     </resources>  

@@ -16,6 +16,7 @@ export interface IPCFButtonProps {
   width?:any;
   height?:any;
   backgroundColorHover?:any;
+  sheetName?:any;
 }
 
 export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
@@ -24,7 +25,7 @@ export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
     try {
       const testss = JSON.parse(props.jsonData);
       const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(testss);
-      const workbook: XLSX.WorkBook = { Sheets: { 'data': worksheet }, SheetNames: ['data'] };
+      const workbook: XLSX.WorkBook = { Sheets: { 'data': worksheet }, SheetNames: [props.sheetName] };
       XLSX.writeFile(workbook, props.fileName +".xlsx");
     } catch (error) {
       console.error('Error exporting to Excel:', error);
@@ -37,13 +38,14 @@ export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
         color: props.color,
         width:props.width,
         height:props.height,
-        fontSize:props.fontSize,
-        fontWeight:props.fontWeight,
-        fontFamily:props.fontFamily,
+        fontSize:props.fontSize,        
         borderColor:props.borderColor,
-        borderRadius:props.borderRadius ,
-        ':hover': {backgroundColor: props.backgroundColorHover}    
-      }        
+        borderRadius:props.borderRadius           
+      }     ,
+      rootHovered: {
+        backgroundColor: props.backgroundColorHover,
+        borderColor:"none"          
+      },   
     }}>
       {props.buttonText}
     </PrimaryButton>

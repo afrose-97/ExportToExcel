@@ -11,14 +11,13 @@ export class exportToExcel implements ComponentFramework.StandardControl<IInputs
         fileName:"",
         backgroundColor: "",
         color: "",
-        fontSize: "",
-        fontWeight: "",
-        fontFamily: "",
+        fontSize: "",       
         borderColor: "",
         borderRadius: "",
         width:"",
         height:"",
-        backgroundColorHover:""
+        backgroundColorHover:"",
+        sheetName:""
 	}
     constructor()
     {
@@ -35,9 +34,7 @@ export class exportToExcel implements ComponentFramework.StandardControl<IInputs
         this.props.buttonText = context.parameters.buttonText.raw!;
 		this.props.jsonData = context.parameters.jsonData.raw!;
         this.props.fileName = context.parameters.fileName.raw!;
-        this.props.fontFamily = context.parameters.fontFamily.raw!;
-		this.props.fontSize = context.parameters.fontSize.raw!;
-        this.props.fontWeight = context.parameters.fontSize.raw!;
+		this.props.fontSize = context.parameters.fontSize.raw!;        
         this.props.backgroundColor = context.parameters.backgroundColor.raw!;
         this.props.backgroundColorHover = context.parameters.backgroundColorHover.raw!;
         this.props.borderColor = context.parameters.borderColor.raw!;
@@ -45,6 +42,7 @@ export class exportToExcel implements ComponentFramework.StandardControl<IInputs
         this.props.color = context.parameters.color.raw!;
         this.props.width = context.parameters.width.raw!;
         this.props.height = context.parameters.height.raw!;
+        this.props.sheetName = context.parameters.sheetName.raw!;
 		ReactDOM.render(
 			React.createElement(
 				ButtonAnchor,
