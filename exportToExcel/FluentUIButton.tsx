@@ -22,11 +22,14 @@ export interface IPCFButtonProps {
 export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
   const onButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {   
      event.preventDefault();
-    try {
-      const testss = JSON.parse(props.jsonData);
-      const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(testss);
-      const workbook: XLSX.WorkBook = { Sheets: { 'data': worksheet }, SheetNames: [props.sheetName] };
-      XLSX.writeFile(workbook, props.fileName +".xlsx");
+     try {
+      const { jsonData, fileName,sheetName } = props;  
+      const parsedData = JSON.parse(jsonData);
+      const worksheet = XLSX.utils.json_to_sheet(parsedData);
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, sheetName);
+      
+      XLSX.writeFile(workbook, `${fileName}.xlsx`);
     } catch (error) {
       console.error('Error exporting to Excel:', error);
     }
