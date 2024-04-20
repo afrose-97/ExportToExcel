@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PrimaryButton,DefaultButton } from 'office-ui-fabric-react';
-import * as XLSX from 'xlsx';
+import convertDataToExcel from 'data-to-xlsx';
 
 export interface IPCFButtonProps {
   buttonText: any;
@@ -23,13 +23,12 @@ export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
   const onButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {   
      event.preventDefault();
      try {
-      const { jsonData, fileName,sheetName } = props;  
-      const parsedData = JSON.parse(jsonData);
-      const worksheet = XLSX.utils.json_to_sheet(parsedData);
-      const workbook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(workbook, worksheet, sheetName);
-      
-      XLSX.writeFile(workbook, `${fileName}.xlsx`);
+      convertDataToExcel({
+        data:JSON.parse(props.jsonData),
+        fileName:props.fileName,
+        sheetName:props.sheetName
+    })
+
     } catch (error) {
       console.error('Error exporting to Excel:', error);
     }
