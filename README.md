@@ -1,5 +1,5 @@
 # ExcelExportGallery
-Excel Export Control: Simplified Data Export to Excel from Power Apps with Customizable Button and File Settings.
+Excel Export Control: Simplified Data Export to Excel from Power Apps Gallery with Customizable Button and File Settings.
 
 Steps to push the component:
 
