@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="exportToExcelNS" constructor="exportToExcel" version="0.0.1" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
+  <control namespace="CEDARExportExcelNS" constructor="exportToExcel" version="0.0.1" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
     <external-service-usage enabled="false">   
     </external-service-usage>    
      <property name="buttonText" display-name-key="buttonText" description-key="button_Text" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Export to Excel"/>
@@ -14,7 +14,9 @@
     <property name="fontSize" display-name-key="fontSize" description-key="font_Size" of-type="SingleLine.Text" usage="input" default-value = "12px"/>    
     <property name="borderColor" display-name-key="borderColor" description-key="border_Color" of-type="SingleLine.Text" usage="input" default-value = "none"/>
     <property name="borderRadius" display-name-key="borderRadius" description-key="border_Radius" of-type="SingleLine.Text" usage="input" default-value = "5px"/>
-    <property name="backgroundColorHover" display-name-key="backgroundColorHover" description-key="backgroundColorHover" of-type="SingleLine.Text" usage="input" />       
+    <property name="backgroundColorHover" display-name-key="backgroundColorHover" description-key="backgroundColorHover" of-type="SingleLine.Text" usage="input" />           
+    <property name="columnOrder" display-name-key="columnOrder" description-key="columnOrder" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="iconName" display-name-key="iconName" description-key="iconName" of-type="SingleLine.Text" usage="input" required="false" />
     <resources>
       <code path="index.ts" order="1"/>   
     </resources>  

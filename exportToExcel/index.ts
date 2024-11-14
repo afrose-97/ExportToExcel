@@ -17,7 +17,10 @@ export class exportToExcel implements ComponentFramework.StandardControl<IInputs
         width:"",
         height:"",
         backgroundColorHover:"",
-        sheetName:""
+        sheetName:"",    
+        iconName:"",
+        columnOrder:""
+         
 	}
     constructor()
     {
@@ -43,6 +46,8 @@ export class exportToExcel implements ComponentFramework.StandardControl<IInputs
         this.props.width = context.parameters.width.raw!;
         this.props.height = context.parameters.height.raw!;
         this.props.sheetName = context.parameters.sheetName.raw!;
+        this.props.columnOrder = context.parameters.columnOrder.raw!;
+        this.props.iconName = context.parameters.iconName.raw!;
 		ReactDOM.render(
 			React.createElement(
 				ButtonAnchor,
