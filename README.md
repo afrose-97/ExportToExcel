@@ -14,5 +14,5 @@ You can push this component directly using the Visual studio developer command p
 **New Features Added**                                                                                                                   
 **Data Export to Excel**: Export gallery data from Power Apps directly to an Excel file.                                       
 **Customizable Button**: Modify button color, text, size, and style to match your app theme.                                   
-**Fluent UI Icon Support**: Enhance the button with a Fluent UI icon for better UI consistency.                                
+**Fluent UI Icon Support**: Enhance the button with a Fluent UI icon(https://www.flicon.io/) for better UI consistency.                                
 **Column Ordering**: Easily arrange columns in a preferred order for Excel output.
