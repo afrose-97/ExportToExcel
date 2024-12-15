@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Excel Export Control PCF (PowerApps Component Framework)
 
 ## Overview
