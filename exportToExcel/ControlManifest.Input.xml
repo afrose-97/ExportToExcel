@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="CEDARExportExcelNS" constructor="exportToExcel" version="3.0.0" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
+  <control namespace="ExportToExcelNS" constructor="exportToExcel" version="3.0.0" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
     <external-service-usage enabled="false">   
     </external-service-usage>    
      <property name="buttonText" display-name-key="Button Text" description-key="button_Text" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Export to Excel"/>

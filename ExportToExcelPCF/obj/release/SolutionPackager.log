@@ -18,3 +18,23 @@ Packing C:\Users\aahame425\Desktop\ExportToExcel\ExportToExcelPCF\obj\release\Me
 2024-12-15 12:15:49.435 - Info	
 Managed Pack complete.
 
+2024-12-15 21:29:01.054 - Info	
+Packing C:\Users\aahame425\Documents\PCF Code\ExportToExcel\ExportToExcelPCF\obj\release\Metadata to bin\release\ExportToExcelPCF.zip
+
+2024-12-15 21:29:01.064 - Info	Processing Component: Entities
+2024-12-15 21:29:01.066 - Info	Processing Component: Roles
+2024-12-15 21:29:01.069 - Info	Processing Component: Workflows
+2024-12-15 21:29:01.069 - Info	Processing Component: FieldSecurityProfiles
+2024-12-15 21:29:01.070 - Info	Processing Component: Templates
+2024-12-15 21:29:01.070 - Info	Processing Component: EntityMaps
+2024-12-15 21:29:01.071 - Info	Processing Component: EntityRelationships
+2024-12-15 21:29:01.073 - Info	Processing Component: OrganizationSettings
+2024-12-15 21:29:01.073 - Info	Processing Component: optionsets
+2024-12-15 21:29:01.073 - Info	Processing Component: CustomControls
+2024-12-15 21:29:01.078 - Info	 - ExportToExcelNS.exportToExcel
+2024-12-15 21:29:01.083 - Info	Processing Component: SolutionPluginAssemblies
+2024-12-15 21:29:01.084 - Info	Processing Component: EntityDataProviders
+2024-12-15 21:29:01.088 - Info	Processing Sharded Component Files
+2024-12-15 21:29:01.152 - Info	
+Managed Pack complete.
+
