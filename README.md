@@ -121,7 +121,7 @@ Push the component to your Power Apps environment:
 ---
 
 ## License
-This project is licensed under the [MIT License]([LICENSE](https://github.com/afrose-97/ExportToExcel/blob/main/LICENSE.txt)).
+This project is licensed under the [MIT License](https://github.com/afrose-97/ExportToExcel/blob/main/LICENSE.txt).
 
 ---
 
