@@ -3,6 +3,10 @@
 ## Overview
 The **Excel Export Control** is a custom PowerApps Component Framework (PCF) component designed to simplify the process of exporting gallery data from Power Apps to an Excel file. This component provides enhanced flexibility with customizable button properties and file settings, ensuring seamless integration with your app's design and functionality.
 
+## Solution Download
+
+You can download the managed and unmanaged solutions from the **Debug** and **Release** sections of this repository. Install the appropriate solution in your organization based on your requirements.
+
 ## Features
 ### 1. Data Export to Excel
 - Export data from a Power Apps gallery directly to an Excel file with a single click.
