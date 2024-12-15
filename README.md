@@ -76,7 +76,10 @@ Push the component to your Power Apps environment:
 3. **Bind Data Source:**
    - Link the gallery data to the component to enable export functionality.
 
-4. **Test the Export:**
+4. **Define Column Order Example:**
+   - Specify column order for the Excel file, e.g., "Column1, Column2, Column3".
+
+5. **Test the Export:**
    - Click the button to download the Excel file with the gallery data.
 
 ---
