@@ -44,7 +44,17 @@ export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
         const orderedRow: any = {};
 
         columnOrder.forEach(key => {
-          let cellValue = row[key] || "";        
+          let cellValue = row[key] || "";
+
+          if (key === "RequirementText" || key === "LRText") {
+            cellValue = cellValue
+              .replace(/^\s+/, '')
+              .replace(/\s{2,3}/g, ' ')
+              .replace(/(?<=\d)\.\s?(?=\d)/g, '.')
+              .replace(/(?<=[a-zA-Z])\.(?=[a-zA-Z])/g, '. ')
+              .replace(/\s{2,}/g, ' ');
+          }
+
           orderedRow[key] = cellValue;
         });
 

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GIvKQ36Opjep5Xnhv7g7A4O60wzvCDgDf+YYQ2GvKrQn6zylINYAGw/os8n9PmwYklXTG7/NkrWV7YuF3DmKHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aahame425\\Desktop\\ExportToExcel\\ExportToExcelPCF\\ExportToExcelPCF.cdsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aahame425\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\aahame425\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "C:\\Users\\aahame425\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.38.3\\microsoft.powerapps.msbuild.pcf.1.38.3.nupkg.sha512",
+    "C:\\Users\\aahame425\\.nuget\\packages\\microsoft.powerapps.msbuild.solution\\1.38.3\\microsoft.powerapps.msbuild.solution.1.38.3.nupkg.sha512"
+  ],
+  "logs": []
+}
