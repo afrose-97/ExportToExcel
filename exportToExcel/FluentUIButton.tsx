@@ -18,40 +18,52 @@ export interface IPCFButtonProps {
   height?: any;
   backgroundColorHover?: any;
   sheetName?: any;
-  columnOrder?:any;
-  iconName?:any
+  columnOrder?: any;
+  iconName?: any
 }
 
 export const ButtonAnchor: React.FunctionComponent<IPCFButtonProps> = props => {
   const ExcelLogo: IIconProps = { iconName: props.iconName };
+
   const onButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
+
     try {
-        const jsonData = JSON.parse(props.jsonData);
-        const columnOrder = Array.isArray(props.columnOrder) && props.columnOrder.length > 0
-            ? props.columnOrder
-            : props.columnOrder?.split(",").map((col: string) => col.trim()) || Object.keys(jsonData[0]);
-        if (!Array.isArray(columnOrder) || columnOrder.length === 0) {
-            console.error("Column order could not be determined.");
-            return;
-        }
-        const orderedData = jsonData.map((row: any) => {
-            const orderedRow: any = {};
-            columnOrder.forEach(key => {
-                orderedRow[key] = row[key] || "";
-            });
-            return orderedRow;
+      const jsonData = JSON.parse(props.jsonData);
+
+      const columnOrder = Array.isArray(props.columnOrder) && props.columnOrder.length > 0
+        ? props.columnOrder
+        : props.columnOrder?.split(",").map((col: string) => col.trim()) || Object.keys(jsonData[0]);
+
+      if (!Array.isArray(columnOrder) || columnOrder.length === 0) {
+        console.error("Column order could not be determined.");
+        return;
+      }
+
+      const orderedData = jsonData.map((row: any) => {
+        const orderedRow: any = {};
+
+        columnOrder.forEach(key => {
+          let cellValue = row[key] || "";        
+          orderedRow[key] = cellValue;
         });
-        console.log("Ordered Data:", orderedData);
-        convertDataToExcel({
-            data: orderedData,
-            fileName: props.fileName,
-            sheetName: props.sheetName
-        });
+
+        return orderedRow;
+      });
+
+      console.log("Ordered Data:", orderedData);
+
+      convertDataToExcel({
+        data: orderedData,
+        fileName: props.fileName,
+        sheetName: props.sheetName
+      });
+
     } catch (error) {
-        console.error("Error parsing JSON or exporting to Excel:", error);
+      console.error("Error parsing JSON or exporting to Excel:", error);
     }
-};
+  };
+
 
   return (
     <PrimaryButton onClick={onButtonClick} iconProps={ExcelLogo} styles={{

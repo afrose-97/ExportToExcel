@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="CEDARExportExcelNS" constructor="exportToExcel" version="0.0.1" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
+  <control namespace="exportToExcelNS" constructor="exportToExcel" version="3.0.0" display-name-key="exportToExcel" description-key="exportToExcel description" control-type="standard" >   
     <external-service-usage enabled="false">   
     </external-service-usage>    
-     <property name="buttonText" display-name-key="buttonText" description-key="button_Text" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Export to Excel"/>
-     <property name="sheetName" display-name-key="sheetName" description-key="sheet_Name" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Data"/>
-    <property name="jsonData" display-name-key="jsonData"  description-key="json_Data" of-type="SingleLine.Text" usage="input" required="true"/>
-    <property name="fileName" display-name-key="fileName" description-key="file_Name" of-type="SingleLine.Text" usage="input" required="true" default-value = "Export to Excel"/>
-    <property name="backgroundColor" display-name-key="backgroundColor" description-key="background_Color" of-type="SingleLine.Text" usage="input"  default-value = "#F3F3F3"/>
-    <property name="color" display-name-key="color" description-key="text_Color" of-type="SingleLine.Text" usage="input" />
-    <property name="width" display-name-key="width" description-key="width" of-type="SingleLine.Text" usage="input"  default-value = "160px"/>
-    <property name="height" display-name-key="height" description-key="height" of-type="SingleLine.Text" usage="input"  default-value = "40px"/>
-    <property name="fontSize" display-name-key="fontSize" description-key="font_Size" of-type="SingleLine.Text" usage="input" default-value = "12px"/>    
-    <property name="borderColor" display-name-key="borderColor" description-key="border_Color" of-type="SingleLine.Text" usage="input" default-value = "none"/>
-    <property name="borderRadius" display-name-key="borderRadius" description-key="border_Radius" of-type="SingleLine.Text" usage="input" default-value = "5px"/>
-    <property name="backgroundColorHover" display-name-key="backgroundColorHover" description-key="backgroundColorHover" of-type="SingleLine.Text" usage="input" />           
-    <property name="columnOrder" display-name-key="columnOrder" description-key="columnOrder" of-type="SingleLine.Text" usage="input" required="false" />
-    <property name="iconName" display-name-key="iconName" description-key="iconName" of-type="SingleLine.Text" usage="input" required="false" />
+     <property name="buttonText" display-name-key="Button Text" description-key="button_Text" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Export to Excel"/>
+     <property name="sheetName" display-name-key="Sheet Name" description-key="sheet_Name" of-type="SingleLine.Text" usage="bound" required="true" default-value = "Data"/>
+    <property name="jsonData" display-name-key="JSON Data"  description-key="json_Data" of-type="SingleLine.Text" usage="input" required="true"/>
+    <property name="fileName" display-name-key="File Name" description-key="file_Name" of-type="SingleLine.Text" usage="input" required="true" default-value = "Export to Excel"/>
+    <property name="backgroundColor" display-name-key="Background Color" description-key="background_Color" of-type="SingleLine.Text" usage="input"  default-value = "#F3F3F3"/>
+    <property name="color" display-name-key="Font Color" description-key="text_Color" of-type="SingleLine.Text" usage="input" />
+    <property name="width" display-name-key="Width" description-key="width" of-type="SingleLine.Text" usage="input"  default-value = "160px"/>
+    <property name="height" display-name-key="Height" description-key="height" of-type="SingleLine.Text" usage="input"  default-value = "40px"/>
+    <property name="fontSize" display-name-key="Font Size" description-key="font_Size" of-type="SingleLine.Text" usage="input" default-value = "12px"/>    
+    <property name="borderColor" display-name-key="Border Color" description-key="border_Color" of-type="SingleLine.Text" usage="input" default-value = "none"/>
+    <property name="borderRadius" display-name-key="Border Radius" description-key="border_Radius" of-type="SingleLine.Text" usage="input" default-value = "5px"/>
+    <property name="backgroundColorHover" display-name-key="Background Color Hover" description-key="backgroundColorHover" of-type="SingleLine.Text" usage="input" />           
+    <property name="columnOrder" display-name-key="Column Order" description-key="columnOrder" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="iconName" display-name-key="Icon Name" description-key="iconName" of-type="SingleLine.Text" usage="input" required="false" />
     <resources>
       <code path="index.ts" order="1"/>   
     </resources>  
